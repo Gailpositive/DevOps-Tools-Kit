@@ -125,3 +125,57 @@ try {
 
 * <img width="797" alt="extra 17" src="https://github.com/Gailpositive/Source-codes/assets/111061512/26c2afc0-bda3-429d-8212-7e60234e3a86">
 
+
+## Shell Scripting
+
+* <img width="753" alt="extra 1" src="https://github.com/Gailpositive/Source-codes/assets/111061512/f7b7b50d-2cf2-49c3-b42f-b622b00b8e47">
+
+* <img width="830" alt="extra 2" src="https://github.com/Gailpositive/Source-codes/assets/111061512/d7e650bd-ba37-48e0-962a-83188b2ef8b5">
+
+* Edit to view code block
+* 
+* #!/bin/bash
+
+# Example script to check if a number is positive, negative, or zero
+
+read -p "Enter a number: " num
+
+if [ $num -gt 0 ]; then
+    echo "The number is positive."
+elif [ $num -lt 0 ]; then
+    echo "The number is negative."
+else
+    echo "The number is zero."
+fi
+
+
+* <img width="928" alt="extra 3" src="https://github.com/Gailpositive/Source-codes/assets/111061512/731b327d-06d0-4a62-b28a-eefd3c18b579">
+
+* Edit to see code block
+* #!/bin/bash
+
+# Example script to print numbers from 1 to 5 using a for loop
+
+for (( i=1; i<=5; i++ ))
+do
+    echo $i
+done
+
+
+* <img width="870" alt="extra 4" src="https://github.com/Gailpositive/Source-codes/assets/111061512/5ba15ba9-43aa-46c0-8b7a-1243f763d3cf">
+
+* <img width="932" alt="extra 5" src="https://github.com/Gailpositive/Source-codes/assets/111061512/dad54e06-d7eb-422f-8c55-ac4727f506fa">
+
+* <img width="952" alt="extra 6" src="https://github.com/Gailpositive/Source-codes/assets/111061512/9b0ab433-9b59-4213-9244-f30be62d20c2">
+
+* <img width="901" alt="extra 7" src="https://github.com/Gailpositive/Source-codes/assets/111061512/598ce476-f95c-4b8d-a266-5be697eff88c">
+
+* #!/bin/bash
+
+# Define a function to greet the user
+greet() {
+    echo "Hello, $1! Nice to meet you."
+}
+
+# Call the greet function and pass the name as an argument
+greet "John"

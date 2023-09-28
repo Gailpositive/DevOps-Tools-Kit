@@ -26,7 +26,7 @@ phpinfo();
 
 
 
-## 
+## Lemp stack Implementation
 
 * <img width="765" alt="extra 1" src="https://github.com/Gailpositive/Source-codes/assets/111061512/56b815ff-d92d-483d-9cdb-5926e0e1ed5c">
 
@@ -80,7 +80,48 @@ server {
 * <img width="745" alt="extra 8" src="https://github.com/Gailpositive/Source-codes/assets/111061512/8b24fab2-0956-4ea6-b02b-9e7cff45dc3a">
 
 
+## Retrieving data from mysql data base with php
+* <img width="791" alt="extra 9" src="https://github.com/Gailpositive/Source-codes/assets/111061512/bb55eb60-1c85-404b-85bb-e6141e8ca3a3">
+
+ * <img width="791" alt="extra 10" src="https://github.com/Gailpositive/Source-codes/assets/111061512/a1282acc-3e31-4f19-9117-2c4b3e8033c3">
+
+* mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+
+* <img width="837" alt="extra 11" src="https://github.com/Gailpositive/Source-codes/assets/111061512/d0c0a7e5-f2fa-42d9-b7f0-056a7039b2b6">
+
+* mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+* <img width="780" alt="extra 12" src="https://github.com/Gailpositive/Source-codes/assets/111061512/883bfe40-2244-4b62-ae4a-742dd7d3af9a">
+
+* <img width="914" alt="extra 13" src="https://github.com/Gailpositive/Source-codes/assets/111061512/b86cd60b-0320-4c21-ab0c-7a7095055b83">
 
 
+* CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));
 
+* <img width="930" alt="extra 14" src="https://github.com/Gailpositive/Source-codes/assets/111061512/f369ca55-615c-418e-a83b-b6d21421e364">
+
+* <img width="911" alt="extra 15" src="https://github.com/Gailpositive/Source-codes/assets/111061512/97435480-fa56-46a1-be13-64d2c04e9492">
+
+* <img width="880" alt="extra 16" src="https://github.com/Gailpositive/Source-codes/assets/111061512/171d6048-d4e1-47ce-8889-daf69fe98610">
+
+* Edit to see code block
+*  <?php
+$user = "example_user";
+$password = "PassWord.1";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+* <img width="797" alt="extra 17" src="https://github.com/Gailpositive/Source-codes/assets/111061512/26c2afc0-bda3-429d-8212-7e60234e3a86">
 

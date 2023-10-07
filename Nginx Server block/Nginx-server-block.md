@@ -1,3 +1,8 @@
+## Check the root below to change it
+
+
+
+
 server {
 
     listen 80;

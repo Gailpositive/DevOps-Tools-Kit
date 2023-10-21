@@ -16,7 +16,7 @@ yum update
 yum install ansible -y   
 ansible --version
 
-ansible.cfg priority
+ansible.cfg file priority
 1.    ANSIBLE_CONFIG
 2.    ./ansible.cfg
 3.    ~/.ansible.cfg

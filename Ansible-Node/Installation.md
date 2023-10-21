@@ -21,7 +21,7 @@ ansible.cfg file priority
 2.    ./ansible.cfg
 3.    ~/.ansible.cfg
 4.    /etc/ansible/ansible.cfg (this is a configuration parth)
-( Create ansible.cfg with the touch command)
+( Create ansible.cfg and inventory.txt (txt,init or yml) with the touch command)
 ansible --version
 
 ============================================

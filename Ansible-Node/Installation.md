@@ -20,8 +20,8 @@ ansible.cfg file priority
 1.    ANSIBLE_CONFIG
 2.    ./ansible.cfg
 3.    ~/.ansible.cfg
-4.    /etc/ansible/ansible.cfg (this is a configuration part)
-
+4.    /etc/ansible/ansible.cfg (this is a configuration parth)
+( Create ansible.cfg with the touch command)
 ansible --version
 
 ============================================

@@ -27,8 +27,24 @@
 * If I click on the logo, it will take me straight to the github
 <img width="634" alt="see git hub logo has added on the navigation plane on the left 5" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/a6f23f35-c13e-41d5-839f-6f9c24329ae4">
 
-* click Build now
+
+# click Build now
 <img width="676" alt="5" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/1e71a558-de7e-4012-996f-c0f45620121e">
+
+# Post build artifact
+<img width="927" alt="post build action" src="https://github.com/Gailpositive/DevOps-Tools-Kit/assets/111061512/10406105-4cdc-4698-964e-2041952002d8">
+
+# Config githook trigger
+<img width="923" alt="11" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/9a7a49cf-e8df-4177-a5e5-599deb390708">
+
+##  Config webhook to trigger a build now every time I pass in a code, So I dont have to click build now manually
+* Go to github:
+* click settings
+* webhooks
+* add webhook
+* add public IP:8080/github-webhook/
+* add webhook
+<img width="914" alt="12" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/af92091c-6540-44ad-9b59-38116b5bbdf6">
 
 <img width="759" alt="6" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/1828d62f-3932-469d-8b47-da3f001023df">
 
@@ -42,13 +58,4 @@
 
 <img width="925" alt="10" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/75c07076-bfc1-4fdb-ba51-b57204c930f5">
 
-<img width="923" alt="11" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/9a7a49cf-e8df-4177-a5e5-599deb390708">
 
-##  Config webhook to trigger a build now every time I pass in a code, So I dont have to click build now manually
-* Go to github:
-* click settings
-* webhooks
-* add webhook
-* add public IP:8080/github-webhook/
-* add webhook
-<img width="914" alt="12" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/af92091c-6540-44ad-9b59-38116b5bbdf6">

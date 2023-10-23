@@ -44,7 +44,7 @@
 
 <img width="923" alt="11" src="https://github.com/Gailpositive/Jenkins-To-github-sample-job/assets/111061512/9a7a49cf-e8df-4177-a5e5-599deb390708">
 
-##  To automate the build now every time I pass in a code, I dont have to dclick build now manually
+##  To automate the build now every time I pass in a code, So I dont have to click build now manually
 * Go to github:
 * click settings
 * webhooks

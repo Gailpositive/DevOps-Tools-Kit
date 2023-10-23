@@ -3,7 +3,7 @@
 
 
 
-
+========================================================================================================================================================
 #!/bin/bash
 
 # This is the Debian package repository of Jenkins to automate installation and upgrade. To use this repository, first add the key to your system:
@@ -21,7 +21,14 @@ sudo apt-get update -y
   sudo apt-get install fontconfig openjdk-11-jre -y
   sudo apt-get install jenkins -y
 
+  #When done
+echo installation successfull...
 
+sudo systemctl status jenkins
+
+
+
+=================================================================================================================================================
 ## ANSIBLE 
 
 SCP ===https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/ 

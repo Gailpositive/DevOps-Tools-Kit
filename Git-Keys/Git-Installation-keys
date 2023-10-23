@@ -1,0 +1,69 @@
+## Git Commands
+
+Git server (ubuntu & redhat)
+.................
+
+Introduction to version control and git
+
+cd desktop
+mkdir (name of directory)
+cd into directory
+create a file =(touch file name,this is the source code)
+git init
+git add file =(to local repo, this is the staging area)
+git commit file -m
+git remote add origin (Https)
+git pull = (pulls remote git to local git)
+git pull origin main --allow-unrelated-histories
+git push (  git push --set-upstream origin main)
+
+
+
+
+fork
+git clone https address
+cd into the folder
+create a branch (git branch ....only creates the branch, which git checkout -b, creates the branch and switch into it)
+switch to one of the branch (switch ...)
+create a file: touch file (branch name)
+git add
+git commit -m
+
+
+git branch -a =displays both local branch (main) and remote branch
+git remote -v =displays (github Https)
+code . =takes me vsc to writes inside the file created
+git status
+git add
+git commit -m
+git add . =adds many files at once
+
+git log is to view commit massage
+git show
+(ls or ll or ls -a to display the file)
+(git has both local and remote repository)
+(git config user.name will display my name)
+(git config user.email will display my email)I can also use the command to chnage user)
+
+......................................................................................................................................................
+HOW TO CREATE A PUBLIC KEYS and clone a local repo to a remote repo.
+                                                                                         ON REDHAT SERVER ON TERMUIS
+0. On ubuntu server terminal 
+1. sudo apt update git                                                                    1. sudo yum update git
+2. To clone git:ssh-keygen, enter, enter,enter to create keypair id
+3. pwd
+4. cd into directory of the public key
+5. cd .ssh/
+6. ls
+7. check pwd and cd back to the right directory
+7. Cat the public key id 
+8. Copy the public id key
+9. Go to that repo in git hub
+9. Click settings, deploy keys, create new key ,title it, paste public key, tick box and save 
+10. Now git clone it
+11, shortcut executing a particular line :to finding the line number:first ls, then ! plus the line number eg(!14)
+
+  
+(ctrl c, terminates whatever i am doing and takes me awafrom that directory)
+ cd.ssh/ 
+ ls

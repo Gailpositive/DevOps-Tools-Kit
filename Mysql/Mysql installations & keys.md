@@ -1,4 +1,4 @@
-Mysql
+## Mysql
 
 Mysqld installation(MYsql installation on redhat
 ===============================================
@@ -39,15 +39,9 @@ Mysqld installation(MYsql installation on redhat
 > sudo systemctl start php-fpm
 > sudo systemctl enable php-fpm
 > sudo systemctl status php-fpm
+======================================================================
 
 
-
-
-
-
-.======================================================================
-172.31.25.99
-#
 # The MySQL database server configuration file.(FOR UBUNTU)
 #
 # One can use all long options that the program supports.
@@ -126,3 +120,4 @@ max_binlog_size = 100M
 # binlog_do_db = include_database_name
 # binlog_ignore_db = include_database_name
 
+=========================================================================================

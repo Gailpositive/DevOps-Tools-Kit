@@ -23,11 +23,13 @@ ansible.cfg file priority
 4.    /etc/ansible/ansible.cfg (this is a configuration parth)
 ( Create ansible.cfg and inventory.txt (txt,init or yml) with the touch command)
 ansible --version
-
+........................................................
+ Check version with :"ansible --version", you will notice "NONE" , meaning ansible comfig fill  is not installed 
+NEXT: Create a file called ansible.cfg with the command: touch ansible.cfg 
 ============================================
 
 ====================
-2. Ansible Setup
+2. Ansible Setup: Ansible uses SSH to communicate with Nodes or Target (use ssh key preferable)
 ====================
 
 #Setup controller and node server :

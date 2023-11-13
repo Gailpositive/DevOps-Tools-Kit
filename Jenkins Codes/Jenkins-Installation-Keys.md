@@ -1,9 +1,10 @@
 ## Jenkins Installation Scripts
 ## Jenkins website: https://pkg.jenkins.io/debian-stable/
-
-
-
-========================================================================================================================================================
+============================================================================================================================
+first, create a file eg: jenkins_install.sh
+vi into the file
+paste the jenkins installation script below in the vi and save
+============================
 #!/bin/bash
 
 # This is the Debian package repository of Jenkins to automate installation and upgrade. To use this repository, first add the key to your system:

@@ -33,14 +33,16 @@ NEXT: Create a file called ansible.cfg with the command: touch ansible.cfg
 ====================
 
 #Setup controller and node server :
-a. create user and give password
-b. add user to sudoer's file in /etc/sudoers file | achiever   ALL=(ALL) NOPASSWD: ALL
-c. switch to achiever user
-d. show the connection methods
+1a. { create user and give password
+1b. add user to sudoer's file in /etc/sudoers file | achiever   ALL=(ALL) NOPASSWD: ALL
+1c. switch to achiever user } (NOTE: sudo visudo, go to root, add name of new user like this:achiever   ALL=(ALL) NOPASSWD: ALL, to grant all access)
+
+2. show the connection methods
   password or ssh keys => generate keys | ssh-keygen
   ssh-copy-id
   copy .ssh/id_rsa.pub from controller to all node servers at .ssh/authorized_keys
-  ssh agent
+
+ 3. ssh agent (see open ssh doc for ssh agent script)
 
 hostKeyChecking => disable
 

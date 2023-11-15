@@ -1,6 +1,30 @@
 ## ANSIBLE
-===============================================
+=============================================== 
 
+Ansible connects in two ways: Adhoc command or Playbooks. Adhoc command is the one done on terminal, while Playbook uses script
+====================================================================================
+SCP ===https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/ 
+============================================================================================
+
+> https://www.linode.com/docs/guides/using-ssh-agent/
+==============================================================
+> [9:18 PM] Fred Achiever Okereke
+---
+- hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+  - name: install git
+    yum:
+      state: present
+      name: httpd
+    when ansible_distribution == "Fedora"
+- name: install git
+    apt:
+      state: present
+      name: apache2
+   when ansible_distribution == "Ubuntu"
+================================================================================================
 # 0. Introduction and Overview of Ansible
 =====================
 www.doc.ansible.com
